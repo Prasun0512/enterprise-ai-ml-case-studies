@@ -1,0 +1,8 @@
+[project]
+name = "enterprise-ai-ml-case-studies"
+version = "0.1.0"
+description = "Sanitized AI/ML case studies and starter implementation patterns."
+requires-python = ">=3.10"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
