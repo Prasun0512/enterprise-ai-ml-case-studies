@@ -9,6 +9,30 @@ or proprietary implementation details. It provides architecture summaries,
 delivery patterns, and small reusable starter-code modules that demonstrate the
 engineering approach behind the projects.
 
+## Business Impact Framing
+
+These case studies are written to explain how AI systems are designed for real
+business workflows: reducing manual document processing, improving extraction
+consistency, enabling grounded knowledge discovery, and routing uncertain or
+high-risk decisions to humans.
+
+## Architecture Decisions and Tradeoffs
+
+- **Decision:** Use sanitized POCs and reusable starter modules instead of
+  private client code.
+- **Tradeoff:** The repo cannot show proprietary implementations, but it can show
+  architecture judgment, governance patterns, and interview-defensible design.
+- **Expected scale:** Patterns are written for enterprise workflows where document
+  volume, review backlogs, retrieval quality, and system-of-record writes must be
+  planned explicitly.
+- **Cost strategy:** Prefer deterministic baselines, targeted LLM calls, storage
+  lifecycle cleanup, and benchmark-driven model selection.
+- **Security strategy:** Use redaction helpers, review gates, and no private data.
+- **Operational strategy:** Validate every POC through tests and document
+  production readiness, monitoring, and roadmap considerations.
+- **Lessons learned:** A strong AI architecture portfolio should explain
+  constraints and tradeoffs, not only list tools.
+
 ## Project Index
 
 - [GenAI Email-to-Case Automation](projects/genai-email-to-case/)
