@@ -44,7 +44,16 @@ sample logic and structured output.
 python projects/jd-resume-ats-matcher/poc.py
 python projects/genai-email-to-case/poc.py
 python -m unittest discover -s tests
+docker compose up --build
 ```
+
+## Engineering Maturity
+
+- Dockerfile and `docker-compose.yml` for local POC execution
+- GitHub Actions workflow for validating all case-study POCs
+- `.env.example` for safe configuration hygiene
+- Production readiness notes in `docs/production-readiness.md`
+- Security, testing, scalability, cost, and roadmap considerations documented
 
 ## Suggested Use
 
