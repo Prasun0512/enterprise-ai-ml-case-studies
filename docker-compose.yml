@@ -1,0 +1,7 @@
+services:
+  case-studies:
+    build: .
+    environment:
+      APP_ENV: local
+      LOG_LEVEL: INFO
+    command: python projects/jd-resume-ats-matcher/poc.py
