@@ -1,0 +1,30 @@
+[
+  {
+    "case_id": "demo-email-001",
+    "scenario": "email_to_case",
+    "input": {
+      "subject": "Urgent support request for delayed onboarding",
+      "body": "A customer reports that onboarding documents were submitted but the case has not moved forward. Contact details are intentionally omitted.",
+      "attachments": ["sanitized_onboarding_form.pdf"]
+    },
+    "expected_signals": ["priority_triage", "document_extraction", "case_creation_payload", "human_review_if_low_confidence"]
+  },
+  {
+    "case_id": "demo-rag-001",
+    "scenario": "rag_quality",
+    "input": {
+      "question": "What evidence supports routing this answer to manual review?",
+      "retrieved_context_ids": ["policy-review-thresholds", "quality-gate-rules"]
+    },
+    "expected_signals": ["citation_check", "groundedness_score", "missing_context_detection"]
+  },
+  {
+    "case_id": "demo-docai-001",
+    "scenario": "document_intelligence",
+    "input": {
+      "document_type": "sanitized_claim_form",
+      "text": "The document includes a claim amount, service date, and masked member identifier."
+    },
+    "expected_signals": ["pii_redaction", "schema_validation", "confidence_scoring"]
+  }
+]

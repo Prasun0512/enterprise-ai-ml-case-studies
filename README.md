@@ -76,7 +76,10 @@ docker compose up --build
 - Dockerfile and `docker-compose.yml` for local POC execution
 - GitHub Actions workflow for validating all case-study POCs
 - `.env.example` for safe configuration hygiene
+- Architecture overview in `docs/architecture.md`
 - Production readiness notes in `docs/production-readiness.md`
+- Security and governance guidance in `docs/security-and-governance.md`
+- Sanitized sample scenarios in `examples/sample_case_study_inputs.json`
 - Security, testing, scalability, cost, and roadmap considerations documented
 
 ## Suggested Use
