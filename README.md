@@ -33,6 +33,18 @@ engineering approach behind the projects.
 - `src/rag/retrieval_metrics.py` - retrieval evaluation metrics
 - `src/agents/orchestrator.py` - minimal tool-routing orchestration pattern
 - `src/classification/thresholds.py` - multi-label threshold calibration helper
+- `src/case_study_pocs.py` - runnable local POC logic for every case-study folder
+
+## Run a Case-Study POC
+
+Every folder under `projects/` includes a runnable `poc.py` file with sanitized
+sample logic and structured output.
+
+```bash
+python projects/jd-resume-ats-matcher/poc.py
+python projects/genai-email-to-case/poc.py
+python -m unittest discover -s tests
+```
 
 ## Suggested Use
 
